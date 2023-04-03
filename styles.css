@@ -1,0 +1,23 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.sidebar {
+    background-color: azure;
+    grid-row-start: 1;
+    grid-row-end: -1;
+}
+
+#castle-icon {
+    height: 100px;
+}
+
+.header {
+    background-color: lemonchiffon;
+}
+
+.main-content {
+    background-color: thistle;
+}
