@@ -1,4 +1,5 @@
 .dashboard {
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
@@ -10,8 +11,18 @@
     grid-row-end: -1;
 }
 
+.logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo > * {
+    padding: 10px;
+}
+
 #castle-icon {
-    height: 100px;
+    height: 60px;
 }
 
 .header {
@@ -20,4 +31,5 @@
 
 .main-content {
     background-color: thistle;
+    overflow: auto;
 }
