@@ -1,14 +1,23 @@
+body {
+    margin: 0;
+}
+
 .dashboard {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: 1fr 6fr;
+    margin: none;
 }
+
+/* Sidebar styles */
 
 .sidebar {
     background-color: azure;
     grid-row-start: 1;
     grid-row-end: -1;
+    position: sticky;
+    box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -25,8 +34,79 @@
     height: 60px;
 }
 
+ul {
+    list-style-type: none;
+    color: inherit;
+    padding: 0;
+}
+
+.sidebar-link > a {
+    text-decoration: none;
+}
+
+div.sidebar-icon-title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+}
+
+div.sidebar-icon-title:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+div.sidebar-icon-title:active {
+    background-color: lemonchiffon;
+}
+
+div.sidebar-icon-title > span {
+    margin-left: 20px;
+    font-size: 1.3rem;
+}
+
+#communities {
+    margin-bottom: 40px;
+}
+
+/* Header styles */
+
 .header {
     background-color: lemonchiffon;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar > * {
+    flex: 0 0 1;
+    margin: 10px;
+}
+
+.top-bar > input {
+    flex: 1;
+    background-color: rgb(243, 243, 243);
+    border: none;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    padding: 0 15px;
+    height: 40px;
+}
+
+.profile-image > img {
+    height: 60px;
+    border-radius: 50%;
+}
+
+#profile-name {
+    font-size: 1.3rem;
 }
 
 .main-content {
