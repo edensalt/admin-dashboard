@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .dashboard {
@@ -24,6 +24,14 @@ Sidebar styles
     z-index: 1;
 }
 
+.sidebar > a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
 .logo {
     display: flex;
     justify-content: start;
@@ -31,7 +39,7 @@ Sidebar styles
     margin-top: 15px;
 }
 
-.logo > * {
+.logo>* {
     padding: 0 10px;
 }
 
@@ -49,7 +57,7 @@ ul {
     padding: 0;
 }
 
-.sidebar-link > a {
+.sidebar-link>a {
     text-decoration: none;
 }
 
@@ -70,7 +78,7 @@ div.sidebar-icon-title:active {
     background-color: lemonchiffon;
 }
 
-div.sidebar-icon-title > span {
+div.sidebar-icon-title>span {
     margin-left: 20px;
     font-size: 1rem;
 }
@@ -104,7 +112,11 @@ Header styles
     margin-right: 10px;
 }
 
-.top-bar > input {
+.top-bar > *:hover {
+    cursor: pointer;
+}
+
+.top-bar>input {
     flex: 1;
     min-width: 100px;
     background-color: rgb(243, 243, 243);
@@ -116,8 +128,12 @@ Header styles
     height: 40px;
 }
 
-.top-bar > .profile-image > img,
-.trending-profile > .profile-image > img {
+.top-bar>input:focus {
+    background-color: #fff;
+}
+
+.top-bar>.profile-image>img,
+.trending-profile>.profile-image>img {
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -134,24 +150,24 @@ Header styles
     align-items: center;
 }
 
-.create > * {
+.create>* {
     flex: 0 1 1;
     margin-left: 15px;
     margin-right: 15px;
 }
 
-.create > .profile-image > img {
+.create>.profile-image>img {
     height: 100px;
     width: 100px;
     border-radius: 50%;
     border: solid yellowgreen 1px;
 }
 
-.create > .greeting {
+.create>.greeting {
     flex: 1;
 }
 
-.greeting > * {
+.greeting>* {
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -164,6 +180,18 @@ Header styles
     width: 130px;
     font-size: 1rem;
     font-weight: bold;
+}
+
+.create button:hover {
+    cursor: pointer;
+}
+
+.create button:focus {
+    background-color: #fff;
+}
+
+.create button:active {
+    background-color: azure;
 }
 
 /* ----------
@@ -199,7 +227,7 @@ h4 {
     flex-direction: column;
 }
 
-.updates > div {
+.updates>div {
     margin-bottom: 15px;
 }
 
@@ -220,7 +248,7 @@ hr {
 Card styles
 ---------- */
 
-.card {    
+.card {
     background-color: #ffffff;
     padding: 15px;
     border-radius: 10px;
@@ -236,7 +264,7 @@ Card styles
     justify-content: end;
 }
 
-.card-actions > * {
+.card-actions>* {
     margin-left: 10px;
     cursor: pointer;
 }
@@ -256,7 +284,7 @@ Trending styles
     margin-bottom: 0;
 }
 
-.trending-profile > .profile-image {
+.trending-profile>.profile-image {
     grid-row-start: 1;
     grid-row-end: 3;
     justify-self: start;
