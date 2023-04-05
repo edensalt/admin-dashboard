@@ -6,3 +6,7 @@ Admin Dashboard project for the <a href="https://www.theodinproject.com/lessons/
 - CSS grid
 - CSS flexbox
 - JS event listeners and SVG property changes
+
+## Wish list
+
+- When checking off a card, have the check turn green, then the card be removed and the rest shuffled up (using animation)
