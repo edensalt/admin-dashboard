@@ -283,5 +283,4 @@ SVG properties
 #card-add:hover,
 #card-share:hover {
     cursor: pointer;
-    fill: orange;
 }
