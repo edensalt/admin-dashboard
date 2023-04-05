@@ -5,7 +5,7 @@ body {
 
 .dashboard {
     display: grid;
-    grid-template-columns: minmax(280px, 1fr) 5fr;
+    grid-template-columns: 240px 5fr;
     grid-template-rows: 1fr 6fr;
     margin: none;
     max-height: 100vh;
@@ -22,7 +22,6 @@ Sidebar styles
     position: sticky;
     box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    padding-left: 10px;
 }
 
 .logo {
@@ -112,6 +111,7 @@ Header styles
     border: none;
     border-radius: 30px;
     font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0px 15px;
     height: 40px;
 }
@@ -142,7 +142,9 @@ Header styles
 
 .create > .profile-image > img {
     height: 100px;
+    width: 100px;
     border-radius: 50%;
+    border: solid yellowgreen 1px;
 }
 
 .create > .greeting {
@@ -197,7 +199,7 @@ h4 {
     flex-direction: column;
 }
 
-.updates div {
+.updates > div {
     margin-bottom: 15px;
 }
 
@@ -247,13 +249,18 @@ Trending styles
     display: grid;
     grid-template-columns: 80px 1fr;
     grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 10px;
+}
+
+.trending-profile:last-of-type {
+    margin-bottom: 0;
 }
 
 .trending-profile > .profile-image {
     grid-row-start: 1;
     grid-row-end: 3;
+    justify-self: start;
     align-self: center;
-    margin: auto;
 }
 
 .handle {
