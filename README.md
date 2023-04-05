@@ -5,4 +5,4 @@ Admin Dashboard project for the Odin Project: Intermediate HTML and CSS course
 
 - CSS grid
 - CSS flexbox
-- SVG properties
+- JS event listeners and SVG property changes
