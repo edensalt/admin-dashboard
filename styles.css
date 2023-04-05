@@ -116,9 +116,12 @@ Header styles
     height: 40px;
 }
 
-.top-bar > .profile-image > img {
+.top-bar > .profile-image > img,
+.trending-profile > .profile-image > img {
     height: 60px;
+    width: 60px;
     border-radius: 50%;
+    border: solid yellowgreen 1px;
 }
 
 #profile-name {
@@ -172,7 +175,8 @@ Main content styles
     padding: 15px;
 }
 
-h3 {
+h3,
+h4 {
     margin: 0;
 }
 
@@ -205,6 +209,10 @@ h3 {
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
+hr {
+    margin: 15px 0;
+}
+
 
 /* ----------
 Card styles
@@ -229,4 +237,33 @@ Card styles
 .card-actions > * {
     margin-left: 10px;
     cursor: pointer;
+}
+
+/* ----------
+Trending styles
+---------- */
+
+.trending-profile {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.trending-profile > .profile-image {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: center;
+    margin: auto;
+}
+
+.handle {
+    align-self: end;
+    margin: 0;
+}
+
+.descriptor {
+    margin: 0;
+    align-self: start;
+    color: rgb(145, 145, 145);
+    font-size: 0.9rem;
 }
