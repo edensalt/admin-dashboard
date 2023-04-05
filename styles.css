@@ -274,3 +274,14 @@ Trending styles
     color: rgb(145, 145, 145);
     font-size: 0.9rem;
 }
+
+/* ----------
+SVG properties
+---------- */
+
+#card-complete:hover,
+#card-add:hover,
+#card-share:hover {
+    cursor: pointer;
+    fill: orange;
+}
